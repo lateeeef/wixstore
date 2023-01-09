@@ -46,8 +46,31 @@
             </div>
             <div class="pt-3">
                 <ul class="text-decoration-none ">
-                    <li class="d-inline mx-3 fw-bold"><a href="#" class="text-decoration-none text-black"><i class="fa fa-user-o fd" aria-hidden="true"></i>
-                        <span>Account</span> <i class="fa fa-angle-down fa-sm"></i></a></li>
+                    <li class="d-inline mx-3 fw-bold dropdown show">
+                        <a href="#" class="text-decoration-none text-black " id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user-o fd" aria-hidden="true"></i>
+                            <span>Account</span> 
+                            <i class="fa fa-angle-down fa-sm"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <button class="dropdown-item btn btn-secondary">SIGN IN</button>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i></i>
+                                <span>My Account</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i></i>
+                                <span>Orders</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i></i>
+                                <span>Saved Items</span>
+                            </a>
+                        </div>    
+                    </li>
+
                     <li class="d-inline mx-3 fw-bold"><a href="#" class="text-decoration-none text-black"><i class="fa fa-question-circle-o fd" aria-hidden="true"></i>
                         <span>Help</span> <i class="fa fa-angle-down fa-sm"></i></a></li>
                     <li class="d-inline mx-3 fw-bold"><a href="#" class="text-decoration-none text-black"><i class="fa fa-shopping-cart fd" aria-hidden="true"></i>
@@ -1273,7 +1296,7 @@
                             <button class="btn p-3 border rounded text-white fa-sm">FEMALE</button>
                         </form>
                     </div>  
-                    <div class="col-3">
+                    <div class="col-3 text-end">
                         <h6>DOWNLOAD WIX FREE APP</h6>
                         <p>Get access to exclusive offers!</p>
                     </div>  
