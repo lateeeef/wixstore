@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     function maketime(){
-        var endTime = new Date ("10 Jan 2023 00:00:00")
+        var endTime = new Date ("17 Jan 2023 00:00:00")
         endTime = (Date.parse(endTime)/1000)
     
         var now = new Date()
@@ -67,6 +67,10 @@ $(document).ready(function(){
 
     $('.btn-secondary').mouseover(function(){
         $(this).show()
+    })
+
+    $('.fa-arrow-up').click(function(){
+        window.scrollTo(0, 0)
     })
 
 

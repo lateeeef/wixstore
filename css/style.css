@@ -22,6 +22,10 @@ section{
 .carousel {
     height: 360px;
 }
+.icon{
+  width: 15px;
+  padding-top: 2px;
+}
 .card{
     margin-right: 1px;
 }
