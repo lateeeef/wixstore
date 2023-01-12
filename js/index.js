@@ -39,7 +39,10 @@ $(document).ready(function(){
 
 
 
-    $('.card').css({'border':'none',})
+    $('.card').css({
+        'border':'none', 
+        // 'transition':'transform .2s' 
+    })
     
 
 
@@ -69,9 +72,11 @@ $(document).ready(function(){
         $(this).show()
     })
 
-    $('.fa-arrow-up').click(function(){
+    $('.fa-chevron-up').click(function(){
         window.scrollTo(0, 0)
     })
+    
+    var up = window.scrollTo(0,0)
 
 
     // $('#leftControl').click(function(){
