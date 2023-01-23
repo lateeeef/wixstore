@@ -56,9 +56,9 @@
                         </a>
 
                         <div class="dropdown-menu position-static shadow px-1 position-absolute top-0" aria-labelledby="dropdownMenuLink">
-                            <a href="signin.html" class="btn btn-outline-dark d-block">SIGN IN</a>
+                            <a href="signin.php" class="btn btn-outline-dark d-block">SIGN IN</a>
                             <div class="dropdown-divider"></div>
-                            <a href="signup.html" class="dropdown-item">
+                            <a href="signup.php" class="dropdown-item">
                                 <i class="fa-light fa-user me-1"></i>
                                 <span class="small">My Account</span>
                             </a>
@@ -94,7 +94,7 @@
                         </div> 
                     </li>
                     <li class="d-inline mx-1 fw-bold">
-                        <a href="cart.html" class="text-decoration-none text-black d-inline-flex align-items-center">
+                        <a href="cart.php" class="text-decoration-none text-black d-inline-flex align-items-center">
                             <!-- <iconify-icon inline icon="ic:outline-shopping-cart" width="24" height="24"></iconify-icon> -->
                             <i class="fa fa-cart-shopping fa-sm fd"></i>
                             <div class="mx-1 d-inline">Cart</div>

@@ -27,6 +27,16 @@ $(document).ready(function(){
             seconds = '0' + seconds
         }
 
+        if(days <= 0){
+            $('#days').remove()
+        }
+        if(hours <= 0){
+            $('#hours').remove()
+        }
+        if(minutes <= 0){
+            $('#minutes').remove()
+        }
+
         $('#days').html(days + 'd :')
         $('#hours').html(hours + 'h :')
         $('#minutes').html(minutes + 'm :')

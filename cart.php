@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/cd01be9631.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <link rel="shortcut icon" href="images/logo/wix.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 
@@ -59,7 +60,7 @@
 
         <nav class="d-flex justify-content-around bg-white py-3 px-5 align-items-center sticky-top">
             <div class="w-5 h-50">
-                <a href="index.html"><img src="images/logo/wix.png" alt="logo" width="100%" height="40px"></a>
+                <a href="index.php"><img src="images/logo/wix.png" alt="logo" width="100%" height="40px"></a>
             </div>
             <div class="col-6">
                 <form class="d-flex" action="">
@@ -78,9 +79,9 @@
                         </a>
 
                         <div class="dropdown-menu shadow px-1 position-absolute top-0" aria-labelledby="dropdownMenuLink">
-                            <a href="signin.html" class="btn btn-outline-dark d-block">SIGN IN</a>
+                            <a href="signin.php" class="btn btn-outline-dark d-block">SIGN IN</a>
                             <div class="dropdown-divider"></div>
-                            <a href="signup.html" class="dropdown-item">
+                            <a href="signup.php" class="dropdown-item">
                                 <i class="fa-light fa-user me-1"></i>
                                 <span class="small">My Account</span>
                             </a>
@@ -115,7 +116,7 @@
                             </a>
                         </div> 
                     </li>
-                    <li class="d-inline mx-2 fw-bold"><a href="cart.html" class="text-decoration-none text-black"><i class="fa fa-shopping-cart fd" aria-hidden="true"></i>
+                    <li class="d-inline mx-2 fw-bold"><a href="cart.php" class="text-decoration-none text-black"><i class="fa fa-shopping-cart fd" aria-hidden="true"></i>
                         <span class="mx-1">Cart</span></a></li>
                 </ul>
             </div>
@@ -132,120 +133,126 @@
                         </thead>
                     </table>
         
-                    <div class="bg-white pt-4 ">
-                        <table class="table-borderless bg-white px-3 m-0">
-                            <tr class="link">
-                                <td class="text-center ">
-                                    <img src="images/fashion/sneaker.jpg"  height="100px" width="100px"
-                                    alt="...">
-                                </td>
-                                <td class="col-8 p-0">
-                                    <div>Women's leather shoe instinged to the development of the culture encapsulated at the bridge of humour and ellepsed tp initiate</div>
-                                </td>
-                                <td>
-                                    <div class="p-0">
-                                        <div class="fs-5 fw-bold">&#8358; 29,756</div>
-                                        <div><del>&#8358; 53,756</del></div>    
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="table bg-white m-0">
-                            <tr>
-                                <td>
-                                    <div>
-                                        <a href="#" class="small remover ">
-                                            <i class="fa fa-trash me-2"></i> REMOVE
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="col-6"></td>
-                                <td>
-                                    <div class="d-flex align-items-center justify-content-around ">
-                                        <iconify-icon inline icon="bxs:minus-square" width="30" height="30"></iconify-icon>
-                                        <span>1</span>
-                                        <iconify-icon inline icon="pajamas:file-addition-solid" width="30" height="30"></iconify-icon>
-                                    </div>    
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-        
-                    <div class="bg-white pt-4">
-                        <table class="table-borderless bg-white px-3 m-0">
-                            <tr class="link">
-                                <td class="text-center ">
-                                    <img src="images/fashion/handbag2.png"  height="100px" width="100px" alt="..." class="mb-4">
-                                </td>
-                                <td class="col-8 p-0">
-                                    <div>Women's leather shoe instinged to the development of the culture encapsulated at the bridge of humour and ellepsed tp initiate</div>
-                                </td>
-                                <td>
-                                    <div class="p-0">
-                                        <div class="fs-5 fw-bold">&#8358; 29,756</div>
-                                        <div><del>&#8358; 53,756</del></div>    
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="table bg-white m-0">
-                            <tr>
-                                <td>
-                                    <div>
-                                        <a href="#" class="small remover">
-                                            <i class="fa fa-trash me-2"></i> REMOVE
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="col-6"></td>
-                                <td>
-                                    <div class="d-flex align-items-center justify-content-around ">
-                                        <iconify-icon inline icon="bxs:minus-square" width="30" height="30"></iconify-icon>
-                                        <span>1</span>
-                                        <iconify-icon inline icon="pajamas:file-addition-solid" width="30" height="30"></iconify-icon>
-                                    </div>    
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-        
-                    <div class="bg-white pt-4">
-                        <table class="table-borderless bg-white px-3 m-0">
-                            <tr class="link">
-                                <td class="text-center ">
-                                    <img src="images/food/nestlemilo.jpg" class="card-img-top mt-2" height="130px" width="100px"
+                    <div class="wrapper">
+                        <div class="bg-white pt-4 " id="row">
+                            <table class="table-borderless bg-white px-3 m-0">
+                                <tr class="link">
+                                    <td class="text-center ">
+                                        <img src="images/fashion/sneaker.jpg"  height="100px" width="100px"
                                         alt="...">
-                                </td>
-                                <td class="col-8 p-0">
-                                    <div>Women's leather shoe instinged to the development of the culture encapsulated at the bridge of humour and ellepsed tp initiate</div>
-                                </td>
-                                <td>
-                                    <div class="p-0">
-                                        <div class="fs-5 fw-bold">&#8358; 29,756</div>
-                                        <div><del>&#8358; 53,756</del></div>    
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="table bg-white m-0">
-                            <tr>
-                                <td>
-                                    <div>
-                                        <a href="#" class="small remover">
-                                            <i class="fa fa-trash me-2"></i> REMOVE
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="col-6"></td>
-                                <td>
-                                    <div class="d-flex align-items-center justify-content-around ">
-                                        <iconify-icon inline icon="bxs:minus-square" width="30" height="30"></iconify-icon>
-                                        <span>1</span>
-                                        <iconify-icon inline icon="pajamas:file-addition-solid" width="30" height="30"></iconify-icon>
-                                    </div>    
-                                </td>
-                            </tr>
-                        </table>
+                                    </td>
+                                    <td class="col-8 p-0">
+                                        <div>Women's leather shoe instinged to the development of the culture encapsulated at the bridge of humour and ellepsed tp initiate</div>
+                                    </td>
+                                    <td>
+                                        <div class="p-0">
+                                            <div class="fs-5 fw-bold">&#8358; 29,756</div>
+                                            <div><del>&#8358; 53,756</del></div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="table bg-white m-0">
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#" class="small remover ">
+                                                <i class="fa fa-trash me-2"></i> REMOVE
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="col-6"></td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around quantity">
+                                            <iconify-icon id="subtract" inline icon="bxs:minus-square" width="30" height="30"></iconify-icon>
+                                            <input class="border-0 text-center " disabled value="1" type="number" name="" id="result" style="width: 35px;">
+                                            <iconify-icon id="add" inline icon="pajamas:file-addition-solid" width="30" height="30"></iconify-icon>
+                                        </div>    
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div class="wrapper">
+                        <div class="bg-white pt-4">
+                            <table class="table-borderless bg-white px-3 m-0">
+                                <tr class="link">
+                                    <td class="text-center ">
+                                        <img src="images/fashion/handbag2.png"  height="100px" width="100px" alt="..." class="mb-4">
+                                    </td>
+                                    <td class="col-8 p-0">
+                                        <div>Women's leather shoe instinged to the development of the culture encapsulated at the bridge of humour and ellepsed tp initiate</div>
+                                    </td>
+                                    <td>
+                                        <div class="p-0">
+                                            <div class="fs-5 fw-bold">&#8358; 29,756</div>
+                                            <div><del>&#8358; 53,756</del></div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="table bg-white m-0">
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#" class="small remover">
+                                                <i class="fa fa-trash me-2"></i> REMOVE
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="col-6"></td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around ">
+                                            <iconify-icon id="add" inline icon="bxs:minus-square" width="30" height="30"></iconify-icon>
+                                            <input class="border-0 text-center " disabled value="1" type="number" name="" id="result" style="width: 35px;">
+                                            <iconify-icon id="subtract" inline icon="pajamas:file-addition-solid" width="30" height="30"></iconify-icon>
+                                        </div>    
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div class="wrapper">
+                        <div class="bg-white pt-4">
+                            <table class="table-borderless bg-white px-3 m-0">
+                                <tr class="link">
+                                    <td class="text-center ">
+                                        <img src="images/food/nestlemilo.jpg" class="card-img-top mt-2" height="130px" width="100px"
+                                            alt="...">
+                                    </td>
+                                    <td class="col-8 p-0">
+                                        <div>Women's leather shoe instinged to the development of the culture encapsulated at the bridge of humour and ellepsed tp initiate</div>
+                                    </td>
+                                    <td>
+                                        <div class="p-0">
+                                            <div class="fs-5 fw-bold">&#8358; 29,756</div>
+                                            <div><del>&#8358; 53,756</del></div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="table bg-white m-0">
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#" class="small remover">
+                                                <i class="fa fa-trash me-2"></i> REMOVE
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="col-6"></td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around ">
+                                            <iconify-icon id="add" inline icon="bxs:minus-square" width="30" height="30"></iconify-icon>
+                                            <input class="border-0 text-center " disabled value="1" type="number" name="" id="result" style="width: 35px;">
+                                            <iconify-icon id="subtract" inline icon="pajamas:file-addition-solid" width="30" height="30"></iconify-icon>
+                                        </div>    
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
         
         
@@ -425,7 +432,7 @@
     </div>
 
     
-
+    <script src="js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
