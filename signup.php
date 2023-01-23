@@ -14,7 +14,7 @@
 <body class="text-center d-flex align-items-center justify-content-center" style="background-color: #f5f5f5ab;">
     <main class="container-sm col-lg-4 mt-5 bg-white px-3 py-4 shadow">
         <!-- <div class="text-center"><iconify-icon icon="emojione-monotone:shooting-star" width="63" height="63"></iconify-icon></div> -->
-        <a href="index.php" class="text-center text-black" title="Go home" ><iconify-icon icon="game-icons:dripping-star" width="63" height="63"></iconify-icon></a href="index.php">
+        <a href="index.html" class="text-center text-black" title="Go home" ><iconify-icon icon="game-icons:dripping-star" width="63" height="63"></iconify-icon></a href="index.html">
         <div class="fs-4">Create Your Account</div>
         <p class="2">Let's get started by creating your account!</p>
         <form action="">

@@ -60,7 +60,7 @@
 
         <nav class="d-flex justify-content-around bg-white py-3 px-5 align-items-center sticky-top">
             <div class="w-5 h-50">
-                <a href="index.php"><img src="images/logo/wix.png" alt="logo" width="100%" height="40px"></a>
+                <a href="index.html"><img src="images/logo/wix.png" alt="logo" width="100%" height="40px"></a>
             </div>
             <div class="col-6">
                 <form class="d-flex" action="">
